@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <style>
+    
+    .red{
+
+      background-color: red;
+    }
+
+    body{
+
+      /* background-color: #808080; */
+      background-image: url("data:image/jpeg;base64,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");
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    
+    </style>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
